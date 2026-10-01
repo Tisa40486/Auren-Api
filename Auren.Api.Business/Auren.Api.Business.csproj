@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <OutputType>Library</OutputType>
+	  <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\Auren.Api.Db\Auren.Api.Db.csproj" />
+		<ProjectReference Include="..\Auren.Api.Dto\Auren.Api.Dto.csproj" />
+		<ProjectReference Include="..\Auren.Api.Model\Auren.Api.Model.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Folder Include="Finance\BankAccount\Command\" />
+	  <Folder Include="Finance\BankAccount\Query\" />
+	</ItemGroup>
+	<ItemGroup>
+	  <PackageReference Include="AutoMapper" Version="16.2.0" />
+	</ItemGroup>
+</Project>

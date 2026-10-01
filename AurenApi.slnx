@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="Auren.Api.Business/Auren.Api.Business.csproj" />
+  <Project Path="Auren.Api.Data/Auren.Api.Data.csproj" />
+  <Project Path="Auren.Api.Db/Auren.Api.Db.csproj" />
+  <Project Path="Auren.Api.Dto/Auren.Api.Dto.csproj" />
+  <Project Path="Auren.Api.Model/Auren.Api.Model.csproj" />
+  <Project Path="AurenApi/Auren.Api.App.csproj" />
+</Solution>
