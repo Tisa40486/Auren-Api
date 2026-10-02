@@ -18,7 +18,6 @@ artifacts/
 *.userosscache
 *.sln.docstates
 *.rsuser
-launchSettings.json
 
 # ReSharper / Rider
 _ReSharper*/
