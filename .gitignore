@@ -36,7 +36,6 @@ secrets.json
 *.key
 
 # Base de données locale
-*.db
 *.db-shm
 *.db-wal
 *.sqlite
