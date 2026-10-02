@@ -1,5 +1,5 @@
-﻿using Auren.Api.Model;
-using Auren.Data.DbContexts;
+﻿using Auren.Api.Data.DbContexts;
+using Auren.Api.Model;
 using Microsoft.EntityFrameworkCore;
 
 namespace Auren.Db.DbContexts

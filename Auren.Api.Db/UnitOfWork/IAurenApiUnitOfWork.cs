@@ -1,12 +1,12 @@
-﻿using Auren.Db.DbContexts;
-using Auren.Db.Repository;
+﻿using Auren.Api.Db.Repository;
+using Auren.Db.DbContexts;
 
-namespace Auren.Db.UnitOfWork
+namespace Auren.Api.Db.UnitOfWork
 {
     public interface IAurenApiUnitOfWork
     {
         IAurenApiDbContext Context { get; }
-        IAurenRepository AurenRepository { get; }
+        IBankAccountRepository BankAccountRepository { get; }
         Task<int> SaveChangesAsync();
     }   
 }

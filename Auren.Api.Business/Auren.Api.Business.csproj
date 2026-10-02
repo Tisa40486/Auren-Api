@@ -12,10 +12,7 @@
 		<ProjectReference Include="..\Auren.Api.Model\Auren.Api.Model.csproj" />
 	</ItemGroup>
 	<ItemGroup>
-	  <Folder Include="Finance\BankAccount\Command\" />
-	  <Folder Include="Finance\BankAccount\Query\" />
-	</ItemGroup>
-	<ItemGroup>
 	  <PackageReference Include="AutoMapper" Version="16.2.0" />
+	  <PackageReference Include="MediatR" Version="14.2.0" />
 	</ItemGroup>
 </Project>

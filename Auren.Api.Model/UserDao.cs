@@ -1,4 +1,4 @@
-﻿using Auren.Data.Model;
+﻿using Auren.Api.Data.Model;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Auren.Api.Model

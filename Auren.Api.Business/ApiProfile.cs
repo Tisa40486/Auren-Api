@@ -1,4 +1,6 @@
-﻿using AutoMapper;
+﻿using Auren.Api.Dto;
+using Auren.Api.Model;
+using AutoMapper;
 
 namespace Auren.Api.Business
 {
@@ -6,8 +8,8 @@ namespace Auren.Api.Business
     {
         public ApiProfile()
         {
-            //CreateMap<UserDao, TemplateReponse>();
-            //CreateMap<TemplateInput, TemplateDao>();
+            CreateMap<BankAccountInput, BankAccountDao>();
+            CreateMap<BankAccountDao, BankAccountReponse>();
         }
     }
 }

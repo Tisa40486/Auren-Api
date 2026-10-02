@@ -1,7 +1,7 @@
-﻿using Auren.Db.DbContexts;
-using Auren.Db.Repository;
-using Auren.Db.Repository.Implementation;
-using Auren.Db.UnitOfWork;
+﻿using Auren.Api.Db.Repository;
+using Auren.Api.Db.Repository.Implementation;
+using Auren.Api.Db.UnitOfWork;
+using Auren.Db.DbContexts;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Auren.Db
@@ -11,7 +11,7 @@ namespace Auren.Db
         public static void RegisterAurenApiDbContainer(this IServiceCollection services)
         {
             services.AddScoped<IAurenApiDbContext, AurenApiDbContext>();
-            services.AddScoped<IAurenRepository, AurenRepository>();
+            services.AddScoped<IBankAccountRepository, BankAccountRepository>();
             services.AddScoped<IAurenApiUnitOfWork, AurenApiUnitOfWork>();
         }
     }

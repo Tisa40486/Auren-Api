@@ -1,4 +1,4 @@
-﻿namespace Auren.Data.Model
+﻿namespace Auren.Api.Data.Model
 {
     public interface IModelDao
     {

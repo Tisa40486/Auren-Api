@@ -1,7 +1,7 @@
-﻿using Auren.Data.DbContexts;
-using Auren.Data.Model;
+﻿using Auren.Api.Data.Model;
+using Auren.Data.DbContexts;
 
-namespace Auren.Data.Repository
+namespace Auren.Api.Data.Repository
 {
     public interface IBaseRepository<TContext, TModelDao>
         where TModelDao : class, IModelDao

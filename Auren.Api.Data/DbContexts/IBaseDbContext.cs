@@ -1,4 +1,4 @@
-﻿using Auren.Data.Model;
+﻿using Auren.Api.Data.Model;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 

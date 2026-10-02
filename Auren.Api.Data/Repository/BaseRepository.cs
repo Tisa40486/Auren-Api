@@ -1,8 +1,8 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Auren.Api.Data.Model;
 using Auren.Data.DbContexts;
-using Auren.Data.Model;
+using Microsoft.EntityFrameworkCore;
 
-namespace Auren.Data.Repository
+namespace Auren.Api.Data.Repository
 {
     public class BaseRepository<TContext, TModelDao> : IBaseRepository<TContext, TModelDao>
         where TModelDao : class, IModelDao

@@ -1,4 +1,5 @@
 ﻿using Auren.Api.Business;
+using Auren.Api.Business.Finance.BankAccount.Command;
 using Auren.Db;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi;
@@ -22,8 +23,8 @@ namespace Auren.Api.App
                 });
             });
             builder.Services.RegisterAurenApiDbContainer();
-            //builder.Services.AddMediatR(cfg =>
-            //    cfg.RegisterServicesFromAssembly(typeof(TemplateGetQuery).Assembly));
+            builder.Services.AddMediatR(cfg =>
+                cfg.RegisterServicesFromAssembly(typeof(CreateBankAccountCommand).Assembly));
             builder.Services.AddAutoMapper(cfg => { }, typeof(ApiProfile).Assembly);
             builder.Services.AddControllers();
             builder.Services.AddOpenApi();

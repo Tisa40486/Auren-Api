@@ -1,4 +1,4 @@
-﻿using Auren.Data.Model;
+﻿using Auren.Api.Data.Model;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -12,8 +12,8 @@ namespace Auren.Api.Model
     {
         [Key]
         public int Id { get; set; }
-        public string Name { get; set; }
-        public float Amount { get; set; }
+        public required string Name { get; set; }
+        public float Balance { get; set; }
         public bool IsActive { get; set; }
         [ForeignKey("FK_User")]
         public int UserId { get; set; }
